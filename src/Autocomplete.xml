@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.autocomplete.Autocomplete"
+        pluginWidget="true"
+        needsEntityContext="false"
+        offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+
+    <name>Autocomplete</name>
+    <description>Custom autocomplete widget for CCG applications</description>
+
+    <properties>
+        <property key="dataSource" type="datasource" isList="true" required="true">
+            <caption>Data Source</caption>
+            <category>Data</category>
+            <description>Defines the source from which data is fetched.</description>
+        </property>
+    <property key="dataSourceAttribute" type="attribute" required="true" dataSource="dataSource">
+            <caption>Search Attribute</caption>
+            <category>Search</category>
+            <description>Defines the attribute to filter search results.</description>
+            <attributeTypes>
+                <attributeType name="String"/>
+                <attributeType name="Enum"/>
+            </attributeTypes>
+        </property>
+
+        <property key="searchMethod" type="enumeration" defaultValue="contains">
+            <caption>Search Method</caption>
+            <category>Search</category>
+            <description>Defines how search suggestions are filtered.</description>
+            <enumerationValues>
+                <enumerationValue key="startswith">Starts with</enumerationValue>
+                <enumerationValue key="contains">Contains</enumerationValue>
+            </enumerationValues>
+        </property>
+
+        <property key="placeholderText" type="string">
+            <caption>Placeholder Text</caption>
+            <category>UI</category>
+            <description>Text displayed when no input is entered.</description>
+        </property>
+
+        <property key="onChange" type="action">
+            <caption>On Change Action</caption>
+            <category>Events</category>
+            <description>Triggered when a value is selected.</description>
+        </property>
+    </properties>
+</widget>
