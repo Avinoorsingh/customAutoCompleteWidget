@@ -1,13 +1,19 @@
 ## Autocomplete
+Mendix Autocomplete widget - version 10.12.2
 [My widget description]
+Mendix Autocomplete custom widget built in JavaScript.
 
 ## Features
+Retrieve the data from entity, microflow, association, context.
+Select the attribute on which to use Autocomplete.
 [feature highlights]
 
 ## Usage
 [step by step instructions]
 
 ## Demo project
+![image](https://github.com/user-attachments/assets/e1863527-cd40-4ea9-8760-153e7ff0bb4a)
+![image](https://github.com/user-attachments/assets/12214a99-276e-48ce-98d1-c05983988305)
 [link to sandbox]
 
 ## Issues, suggestions and feature requests
